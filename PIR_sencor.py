@@ -20,6 +20,6 @@ try:
     setup(14)
     GPIO.add_event_detect(14, GPIO.BOTH, callback=motion, bouncetime=200)
     while True:
-        time.sleep(1)
+        time.sleep(5)
 except:
     GPIO.cleaup()
